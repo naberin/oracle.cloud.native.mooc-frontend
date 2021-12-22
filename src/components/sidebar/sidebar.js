@@ -17,19 +17,15 @@ const component = function Component() {
     // and create Links with the fixed json
     let links = navigation_list.map(link => {
         return (
-            <li className={"link " + currentLink(link.path)} key={link.name}>
-                <Link to={link.path} title={link.name}>
-                    <i className={link.icon}/>
-                </Link>
-            </li>
+            <Link to={link.path} title={link.name} className={"link " + currentLink(link.path)} key={link.name}>
+                <i className={link.icon}/>
+            </Link>
         )
     })
 
     return (
-        <div className="app-sidebar">
-            <ul className="">
-                {links}
-            </ul>
+        <div className="app-sidebar flex flex-col">
+            {links}
         </div>
     )
 }

@@ -37,6 +37,6 @@
   {
     "name": "Preferences",
     "path": "/preferences",
-    "icon": "fas fa-cog"
+    "icon": "fas fa-user-cog"
   }
 ]
