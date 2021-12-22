@@ -1,0 +1,51 @@
+div#root, .app {
+    height: 100%;
+    width: 100%;
+    background-color: #e8e8e8;
+}
+
+/********************
+Sidebar
+********************/
+.app-sidebar {
+    height: 100%;
+    padding: 19px 0;
+    overflow: hidden;
+    width: 58px;
+
+    background-color: #5100f3;
+    color: #e4d7ff;
+}
+
+.app-sidebar .link {
+    text-align: center;
+    padding: 14px;
+    font-size: 1.1em;
+    transition: font-size .2s;
+}
+
+.app-sidebar .link:hover {
+    cursor: pointer;
+    font-size: 1.3em;
+}
+
+.app-sidebar .link:hover,
+.app-sidebar .link:visited,
+.app-sidebar .link:active
+{
+    color: #ffffff;
+    background-color: #8f33ff;
+}
+
+.app-sidebar .link.active
+{
+    color: #5100f3;
+    background-color: #ffd500;
+}
+
+.app-sidebar .link.active,
+.app-sidebar .link.active *
+{
+    cursor: default;
+}
+
