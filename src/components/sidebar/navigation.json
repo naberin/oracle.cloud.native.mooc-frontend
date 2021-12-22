@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Home",
+    "path": "/",
+    "icon": "fas fa-home"
+  },
+  {
+    "name": "My Learning",
+    "path": "/learn",
+    "icon": "fas fa-brain"
+  },
+  {
+    "name": "Notifications",
+    "path": "/notifications",
+    "icon": "fas fa-bell"
+  },
+  {
+    "name": "Notes",
+    "path": "/notes",
+    "icon": "fas fa-sticky-note"
+  },
+  {
+    "name": "Lists",
+    "path": "/lists",
+    "icon": "fas fa-list-alt"
+  },
+  {
+    "name": "Bookmarks",
+    "path": "/bookmarks",
+    "icon": "fas fa-bookmark"
+  },
+  {
+    "name": "Threads",
+    "path": "/threads",
+    "icon": "fas fa-comment-alt"
+  },
+  {
+    "name": "Preferences",
+    "path": "/preferences",
+    "icon": "fas fa-cog"
+  }
+]
