@@ -49,3 +49,30 @@ Sidebar
     cursor: default;
 }
 
+
+/********************
+Header
+********************/
+.app-header {
+    padding: 9px 14px;
+    width: 100%;
+    font-size: 1.1em;
+}
+.app-header .title {
+    padding: 7px 14px;
+    font-size: 1.5em;
+    text-decoration: underline;
+    font-family: 'Staatliches', cursive;
+}
+
+.app-header .link {
+    color: #7c7c7c;
+    padding: 14px;
+}
+.app-header .link:hover {
+    color: #000;
+    cursor: pointer;
+}
+.app-header .link:not(:last-child){
+    margin-right: 4px;
+}
