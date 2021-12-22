@@ -6,11 +6,9 @@ const component = function (props) {
 
     let links = navigation_list.map(link => {
         return (
-            <li className="link" key={link.name}>
-                <Link to={link.path} title={link.name}>
-                    <i className={link.icon}/>
-                </Link>
-            </li>
+            <Link to={link.path} title={link.name} className="link" key={link.name}>
+                <i className={link.icon}/>
+            </Link>
         )
     })
 
@@ -19,9 +17,9 @@ const component = function (props) {
             <div className={"left"}>
                 <div className="title">{title}</div>
             </div>
-            <ul className={"right flex flex-row"}>
+            <div className={"right flex flex-row"}>
                 {links}
-            </ul>
+            </div>
 
         </header>
     )
