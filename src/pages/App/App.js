@@ -1,7 +1,7 @@
 import './App.css';
 import {Routes} from "react-router-dom";
 
-import AppHeader from "../../components/header";
+import AppHeader from "../../components/header/header";
 import Sidebar from "../../components/sidebar/sidebar";
 function App() {
   return (
