@@ -1,18 +1,23 @@
 import './App.css';
-import {Routes} from "react-router-dom";
+import {Routes, Route} from "react-router-dom";
 
 import AppHeader from "../../components/header/header";
 import Sidebar from "../../components/sidebar/sidebar";
+import DashboardPage from "../../pages/DashboardPage";
+
 function App() {
   return (
 
     <div className="app flex flex-row">
         <Sidebar />
-        <AppHeader title="Depth"/>
+        <main className={"flex flex-col"}>
+            <AppHeader title="Depth"/>
 
-        <Routes>
+            <Routes>
+                <Route path="/" element={<DashboardPage/>}/>
+            </Routes>
+        </main>
 
-        </Routes>
     </div>
   );
 }
