@@ -12,6 +12,10 @@ main {
     font-family: 'Roboto', sans-serif;
 }
 
+.btn:hover {
+    cursor: pointer;
+}
+
 /********************
 Sidebar
 ********************/
@@ -83,6 +87,7 @@ Header
     color: #000;
     cursor: pointer;
 }
+
 .app-header .link:not(:last-child){
     margin-right: 4px;
 }
@@ -90,3 +95,22 @@ Header
 .app-header .app-title-container {
     margin-top: 9px;
 }
+
+/* Search */
+.app-header .app-search {
+    border: 1px solid #292929;
+    margin-right: 14px;
+}
+.app-header .app-search .icon {
+    padding: 14px;
+}
+.app-header .app-search input#app-header-search {
+    min-width: 5em;
+    border: none;
+}
+.app-header .app-search .btn.close {
+    background-color: inherit;
+    transition: background-color .5s;
+}
+.app-header .app-search .btn.close:hover {
+    background-color: #e8e8e8;

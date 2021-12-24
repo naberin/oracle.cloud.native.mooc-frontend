@@ -1,5 +1,6 @@
 import {Link} from "react-router-dom";
 import navigation_list from "./navigation.json";
+import Search from "../search/search";
 
 const component = function (props) {
     let title = props.title;
@@ -15,9 +16,10 @@ const component = function (props) {
     return (
         <header className={"app-header flex flex-row flex-justify-space-between"}>
             <div className={"left"}>
-                <div class="app-title-container"><Link to="/" className="title">{title}</Link></div>
+                <div className="app-title-container"><Link to="/" className="title">{title}</Link></div>
             </div>
             <div className={"right flex flex-row"}>
+                <Search/>
                 {links}
             </div>
 
