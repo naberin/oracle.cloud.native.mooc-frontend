@@ -15,7 +15,7 @@ const component = function (props) {
     return (
         <header className={"app-header flex flex-row flex-justify-space-between"}>
             <div className={"left"}>
-                <div className="title">{title}</div>
+                <div class="app-title-container"><Link to="/" className="title">{title}</Link></div>
             </div>
             <div className={"right flex flex-row"}>
                 {links}
