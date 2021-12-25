@@ -4,6 +4,9 @@ import {Routes, Route} from "react-router-dom";
 import AppHeader from "../../components/header/header";
 import Sidebar from "../../components/sidebar/sidebar";
 import DashboardPage from "../../pages/DashboardPage";
+import CoursesPage from "../../pages/CoursesPage";
+import PreferencesPage  from "../../pages/PreferencesPage";
+import NotificationsPage  from "../../pages/NotificationsPage";
 
 function App() {
   return (
@@ -13,9 +16,15 @@ function App() {
         <main className={"flex flex-col"}>
             <AppHeader title="Depth"/>
 
-            <Routes>
-                <Route path="/" element={<DashboardPage/>}/>
-            </Routes>
+            <div className={"page flex-grow-9"}>
+                <Routes>
+                    <Route path="/" element={<DashboardPage/>}/>
+                    <Route path="/learn"  element={<CoursesPage/>}/>
+                    <Route path="/notifications"  element={<NotificationsPage/>}/>
+                    <Route path="/preferences"  element={<PreferencesPage/>}/>
+                </Routes>
+            </div>
+
         </main>
 
     </div>
