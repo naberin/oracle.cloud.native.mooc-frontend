@@ -116,3 +116,10 @@ Header
 .app-header .app-search .btn.close:hover {
     background-color: #e8e8e8;
 }
+
+/********************
+Page
+********************/
+.app .page {
+    margin: 14px 9px;
+}
