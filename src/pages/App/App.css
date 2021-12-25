@@ -98,11 +98,12 @@ Header
 
 /* Search */
 .app-header .app-search {
-    border: 1px solid #292929;
+    border: 1px solid #7c7c7c;
     margin-right: 14px;
 }
 .app-header .app-search .icon {
     padding: 14px;
+    color: #7c7c7c;
 }
 .app-header .app-search input#app-header-search {
     min-width: 5em;
